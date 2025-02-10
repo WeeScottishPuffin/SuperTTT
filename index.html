@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="title">Speed Tic Tac Toe</h1>
+        <div class="toprow">
+            <p id="turnname">X's turn</p>
+            <p><span id="timer"></span>s</p></div>
+        <div class="board">
+            <div id="sq-0" class="square" onclick="place(0)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-1" class="square" onclick="place(1)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-2" class="square" onclick="place(2)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-3" class="square" onclick="place(3)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-4" class="square" onclick="place(4)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-5" class="square" onclick="place(5)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-6" class="square" onclick="place(6)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-7" class="square" onclick="place(7)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+            <div id="sq-8" class="square" onclick="place(8)"><img class="placed cross" src="cross.svg"/><img class="placed nought" src="nought.svg"/></div>
+        </div>
+        <button id="startbtn" class="startbtn" onclick="start_game()">START</button>
+        <div class="timerbtns">
+            <button id="button-3s" onclick="timelimit=3;timeele.innerHTML=timelimit.toFixed(1)" class="timerbtn">3s</button>
+            <button id="button-5s" onclick="timelimit=5;timeele.innerHTML=timelimit.toFixed(1)" class="timerbtn">5s</button>
+            <button id="button-10s" onclick="timelimit=10;timeele.innerHTML=timelimit.toFixed(1)" class="timerbtn">10s</button>
+        </div>
+        <p>
+            Press the squares or the corresponding number keys to place your symbol. When you place your 4th symbol, the first one gets removed. There is also a timelimit, set at 3 seconds by default.
+        </p>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="keypress.js"></script>
+</html>
